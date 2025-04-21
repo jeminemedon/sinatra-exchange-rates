@@ -1,0 +1,9 @@
+<h1>Currency pairs</h1>
+
+<ul>
+<% @currencies.each do |symbol, details| %>
+  <li>
+    <a href="/<%= symbol %>"><%= symbol %></a>
+  </li>
+<% end %>
+</ul>
